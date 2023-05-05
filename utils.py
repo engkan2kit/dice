@@ -23,9 +23,11 @@ def generateDieRoll(n):
     """
     This function generates an array of random integer ranging
     ranging from to 6.
+
+    usage: generateDieRoll(3) 
+    returns: list with 3 random values
     """
     result = []
     for i in range(n):
         result.append(random.randint(1,6))
     return result
-    
