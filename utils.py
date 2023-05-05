@@ -19,3 +19,12 @@ def generateArrangements(N):
     list=list.reshape((N,N))
     return list
 
+def generateDieRoll(n):
+    """
+    This function generates an array of random integer ranging
+    ranging from to 6.
+    """
+    result = []
+    for i in range(n):
+        result.append(random.randint(1,6))
+    return result
